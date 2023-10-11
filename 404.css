@@ -24,7 +24,7 @@
 }
 .not-found-container2 {
   width: 421px;
-  display: flex;
+  display:flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
