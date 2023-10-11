@@ -33,16 +33,22 @@
   width: 140px;
   height: 100px;
   display: flex;
-  align-self: center;
+  position: relative;
   align-items: center;
-  justify-content: flex-start;
+  border-color: rgba(255, 255, 255, 0.01);
+  border-style: double;
+  border-width: 5px;
+  justify-content: flex-end;
 }
 .home-link {
   display: contents;
 }
 .home-image {
+  top: 30px;
+  left: 0px;
   width: 32px;
   height: 40px;
+  position: absolute;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -165,6 +171,7 @@
   text-decoration: none;
 }
 .home-container4 {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   transition: 0.3s;
   align-items: center;
@@ -414,38 +421,55 @@
 }
 @media(max-width: 767px) {
   .home-navbar-interactive {
-    height: 58px;
+    height: auto;
+    padding: var(--dl-space-space-twounits);
     position: relative;
-    padding-top: var(--dl-space-space-halfunit);
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-fourunits);
-    padding-bottom: var(--dl-space-space-halfunit);
   }
   .home-container1 {
-    height: 58px;
+    top: 5px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    margin-left: var(--dl-space-space-twounits);
+    margin-right: var(--dl-space-space-twounits);
+    padding-right: 0px;
+    justify-content: flex-end;
   }
   .home-image {
+    top: 13px;
+    left: 0px;
+    right: 3px;
     width: 25px;
+    bottom: 4px;
     height: 34px;
+    position: absolute;
+    padding-top: 0px;
   }
   .home-desktop-menu {
     display: none;
   }
   .home-container3 {
     top: -1px;
+    left: 0px;
     right: 0px;
-    height: 56px;
+    width: auto;
+    height: 88px;
+    margin: auto;
     position: absolute;
     margin-right: var(--dl-space-space-twounits);
     justify-content: flex-end;
   }
   .home-image1 {
-    width: 33px;
-    height: 32px;
+    width: 49px;
+    height: 47px;
   }
   .home-register {
-    width: 70px;
-    height: 29px;
+    width: 86px;
+    height: 35px;
+    align-self: center;
+    text-align: center;
   }
   .home-burger-menu {
     display: flex;
@@ -523,16 +547,12 @@
 }
 @media(max-width: 479px) {
   .home-navbar-interactive {
-    height: 54px;
+    height: 72px;
     padding: var(--dl-space-space-unit);
     position: relative;
     padding-right: var(--dl-space-space-unit);
   }
   .home-container1 {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .home-container3 {
     top: -1px;
     right: 0px;
     width: 140px;
@@ -543,6 +563,23 @@
     margin-bottom: auto;
     padding-right: 0px;
     justify-content: flex-end;
+  }
+  .home-container3 {
+    top: -1px;
+    right: 0px;
+    width: auto;
+    height: 76px;
+    position: absolute;
+    margin-top: auto;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    margin-bottom: auto;
+    padding-right: 0px;
+    justify-content: flex-end;
+  }
+  .home-image1 {
+    width: 37px;
+    height: 34px;
   }
   .home-register {
     align-self: center;
@@ -558,12 +595,12 @@
     font-size: 50px;
     box-shadow: rgb(0, 0, 0) 5px 5px 10px 0px;
     font-style: normal;
-    margin-top: var(--dl-space-space-fourunits);
+    margin-top: var(--dl-space-space-threeunits);
     font-family: Pixelify Sans;
     font-weight: 900;
     margin-left: var(--dl-space-space-halfunit);
     margin-right: var(--dl-space-space-halfunit);
-    margin-bottom: var(--dl-space-space-fourunits);
+    margin-bottom: var(--dl-space-space-twounits);
     padding-right: 0px;
     background-image: linear-gradient(rgba(63, 89, 107, 0) 99%, rgba(0, 0, 0, 0.79) 100%),linear-gradient(0deg, rgba(189, 195, 199, 0) 77%, rgba(0, 0, 0, 0.49) 98%),linear-gradient(rgba(189, 195, 199, 0) 77%, rgba(0, 0, 0, 0.49) 98%),linear-gradient(rgba(63, 89, 107, 0) 99%, rgba(0, 0, 0, 0.79) 100%),radial-gradient(circle, rgba(189, 195, 199, 0) 81%, rgba(0, 0, 0, 0.6) 100%),radial-gradient(circle, rgba(189, 195, 199, 0) 69%, rgba(0, 5, 11, 0.71) 100%),radial-gradient(circle, rgba(189, 195, 199, 0) 70%, rgb(53, 86, 119) 100%),radial-gradient(circle, rgba(17, 17, 66, 0.18) 32%, rgba(11, 20, 25, 0) 58%, rgb(27, 10, 38) 81%, rgba(255, 138, 0, 0.28) 100%),linear-gradient(315deg, rgb(48, 49, 49) 0%, rgba(0, 0, 0, 0.27) 100%);
   }
