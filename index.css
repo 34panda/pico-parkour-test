@@ -558,18 +558,18 @@
     font-size: 50px;
     box-shadow: rgb(0, 0, 0) 5px 5px 10px 0px;
     font-style: normal;
-    margin-top: var(--dl-space-space-threeunits);
+    margin-top: var(--dl-space-space-fourunits);
     font-family: Pixelify Sans;
     font-weight: 900;
     margin-left: var(--dl-space-space-halfunit);
     margin-right: var(--dl-space-space-halfunit);
-    margin-bottom: var(--dl-space-space-twounits);
+    margin-bottom: var(--dl-space-space-fourunits);
     padding-right: 0px;
     background-image: linear-gradient(rgba(63, 89, 107, 0) 99%, rgba(0, 0, 0, 0.79) 100%),linear-gradient(0deg, rgba(189, 195, 199, 0) 77%, rgba(0, 0, 0, 0.49) 98%),linear-gradient(rgba(189, 195, 199, 0) 77%, rgba(0, 0, 0, 0.49) 98%),linear-gradient(rgba(63, 89, 107, 0) 99%, rgba(0, 0, 0, 0.79) 100%),radial-gradient(circle, rgba(189, 195, 199, 0) 81%, rgba(0, 0, 0, 0.6) 100%),radial-gradient(circle, rgba(189, 195, 199, 0) 69%, rgba(0, 5, 11, 0.71) 100%),radial-gradient(circle, rgba(189, 195, 199, 0) 70%, rgb(53, 86, 119) 100%),radial-gradient(circle, rgba(17, 17, 66, 0.18) 32%, rgba(11, 20, 25, 0) 58%, rgb(27, 10, 38) 81%, rgba(255, 138, 0, 0.28) 100%),linear-gradient(315deg, rgb(48, 49, 49) 0%, rgba(0, 0, 0, 0.27) 100%);
   }
   .home-container6 {
     width: 100%;
-    height: 300px;
+    height: 374px;
     margin-bottom: var(--dl-space-space-fourunits);
     padding-bottom: 0px;
   }
