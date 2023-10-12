@@ -149,6 +149,9 @@
   transform: scale(1.15);
   text-shadow: 0 0 7px;
 }
+.home-link6 {
+  display: contents;
+}
 .home-container3 {
   flex: 0 0 auto;
   width: 140px;
@@ -159,16 +162,13 @@
   border-style: double;
   border-width: 5px;
   justify-content: flex-end;
-}
-.home-link6 {
-  display: contents;
+  text-decoration: none;
 }
 .home-buttons {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  text-decoration: none;
 }
 .home-container4 {
   border: 2px dashed rgba(120, 120, 120, 0.4);
@@ -221,10 +221,12 @@
   left: 0px;
   width: 100%;
   height: 100vh;
-  display: none;
+  display: flex;
   padding: 32px;
   z-index: 100;
   position: absolute;
+  transform: translateX(-100%);
+  transition: 0.5s;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
@@ -413,6 +415,23 @@
   text-align: center;
 }
 @media(max-width: 991px) {
+  .home-navbar-interactive {
+    position: relative;
+  }
+  .home-desktop-menu {
+    display: none;
+  }
+  .home-container3 {
+    top: auto;
+    left: auto;
+    right: 0px;
+    bottom: auto;
+    position: absolute;
+    margin-right: var(--dl-space-space-threeunits);
+  }
+  .home-burger-menu {
+    display: flex;
+  }
   .home-text5 {
     width: 750px;
     margin-left: 0px;
@@ -447,23 +466,21 @@
     position: absolute;
     padding-top: 0px;
   }
-  .home-desktop-menu {
-    display: none;
-  }
   .home-container3 {
-    top: -1px;
-    left: 0px;
+    left: auto;
     right: 0px;
-    width: auto;
+    width: 161px;
+    bottom: auto;
     height: 88px;
     margin: auto;
     position: absolute;
     margin-right: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
     justify-content: flex-end;
   }
   .home-image1 {
-    width: 49px;
-    height: 47px;
+    width: 40px;
+    height: 38px;
   }
   .home-register {
     width: 86px;
@@ -547,6 +564,7 @@
 }
 @media(max-width: 479px) {
   .home-navbar-interactive {
+    width: 100%;
     height: 72px;
     padding: var(--dl-space-space-unit);
     position: relative;
@@ -565,16 +583,19 @@
     justify-content: flex-end;
   }
   .home-container3 {
-    top: -1px;
+    left: nan;
     right: 0px;
-    width: auto;
-    height: 76px;
+    width: 143px;
+    bottom: 0px;
+    height: 100%;
     position: absolute;
+    align-self: center;
     margin-top: auto;
-    margin-left: var(--dl-space-space-unit);
+    margin-left: auto;
     margin-right: var(--dl-space-space-unit);
     margin-bottom: auto;
     padding-right: 0px;
+    flex-direction: row;
     justify-content: flex-end;
   }
   .home-image1 {
