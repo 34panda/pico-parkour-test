@@ -475,7 +475,6 @@
     margin: auto;
     position: absolute;
     margin-right: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
     justify-content: flex-end;
   }
   .home-image1 {
@@ -545,7 +544,7 @@
     margin-left: var(--dl-space-space-unit);
     margin-right: var(--dl-space-space-halfunit);
     text-decoration: none;
-    background-image: url("public/raiot_normal_4-1500w.gif");
+    background-image: radial-gradient(circle at center, rgba(44, 1, 162, 0.41) 21.00%,rgb(0, 0, 0) 100.00%,rgb(0, 0, 0) 100.00%,rgb(141, 89, 28) 100.00%),url("public/raiot_normal_4-1500w.gif");
     background-position: center,bottom;
   }
   .home-navlink1 {
@@ -558,7 +557,7 @@
     margin-left: var(--dl-space-space-halfunit);
     margin-right: var(--dl-space-space-unit);
     text-decoration: none;
-    background-image: url("public/raiot_normal_5-1500w.gif");
+    background-image: radial-gradient(circle at center, rgba(200, 131, 8, 0.42) 0.00%,rgba(0, 0, 0, 0.5) 58.00%,rgb(0, 0, 0) 100.00%,rgb(141, 89, 28) 100.00%),url("public/raiot_normal_5-1500w.gif");
     background-position: center;
   }
 }
@@ -644,7 +643,7 @@
     margin-right: var(--dl-space-space-halfunit);
     margin-bottom: var(--dl-space-space-unit);
     text-decoration: none;
-    background-image: url("public/raiot_normal_4-1500w.gif");
+    background-image: radial-gradient(circle at center, rgba(44, 1, 162, 0.41) 21.00%,rgb(0, 0, 0) 100.00%,rgb(0, 0, 0) 100.00%,rgb(141, 89, 28) 100.00%),url("public/raiot_normal_4-1500w.gif");
     background-position: center;
   }
   .home-navlink1 {
@@ -660,6 +659,6 @@
     margin-right: var(--dl-space-space-halfunit);
     margin-bottom: var(--dl-space-space-unit);
     text-decoration: none;
-    background-image: url("public/raiot_normal_5-1500w.gif");
+    background-image: radial-gradient(circle at center, rgba(200, 131, 8, 0.42) 0.00%,rgba(0, 0, 0, 0.5) 58.00%,rgb(0, 0, 0) 100.00%,rgb(141, 89, 28) 100.00%),url("public/raiot_normal_5-1500w.gif");
   }
 }
